@@ -1,0 +1,47 @@
+Comando
+ls Listagem de arquivos e pastas
+cd PASTA Navega até a pasta desejada
+
+mkdir - PASTA Cria uma nova pasta
+rm - ARQUIVO Exclui um arquivo
+rm –r - PASTA Exclui uma pasta
+pwd - Apresenta o diretório atual
+cp ORIGEM DESTINO - Copia um arquivo da origem para o destino
+mv ORIGEM DESTINO - Move ou recorta um arquivo da origem para o destino
+touch ARQUIVO - Cria um arquivo em branco
+head ARQUIVO - Exibe as 10 primeiras linhas do arquivo
+tail ARQUIVO - Exibe as 10 últimas linhas do arquivo
+whoami - Apresenta o nome do usuário logado
+top - Lista os programas em execução e dados de uso de memória
+date - Exibe a data e hora
+adduser NOMEUSUARIO - Cria um novo usuário
+Sudo - permissão de super user
+
+
+-l do comando ls, podemos verificar as permissões para cada
+arquivo e pasta
+
+echo “Conteúdo do arquivo” >
+aulapratica.txt. Esse comando criará um novo arquivo chamado aulapratica.txt e dentro do
+arquivo estará o texto que digitamos entre as aspas.
+
+Para conseguir criar todo o caminho sem precisar criar uma
+pasta por vez, podemos utilizar o parâmetro -p do comando mkdir para indicar que
+desejamos criar toda a estrutura de pastas caso ela ainda não exista
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
