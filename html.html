@@ -10,8 +10,35 @@ A tag `<dt>` define o **termo** ou título de um item na lista de descrição.
 A tag `<dd>` define a **descrição** ou o detalhamento do termo especificado em `<dt>`.
 
 ### Exemplo de `<dl>`, `<dt>` e `<dd>`:
+    <dl>
+    <dt>HTML</dt>
+    <dd>Uma linguagem de marcação usada para criar páginas da web.</dd>
+    
+    <dt>CSS</dt>
+    <dd>Uma linguagem de estilo usada para definir a aparência de páginas da web.</dd>
+</dl>
+A tag `<footer>` em HTML é usada para definir o **rodapé** de uma página ou de uma seção. Geralmente, ela contém informações como direitos autorais, links para políticas de privacidade, informações de contato ou outros detalhes relacionados ao conteúdo.
+
+### Exemplo de uso:
 ```html
-<dl>
+<footer>
+    <p>&copy; 2025 Cristian Santos. Todos os direitos reservados.</p>
+    <p><a href="privacy.html">Política de Privacidade</a></p>
+</footer>
+```
+
+### Características:
+- Pode ser usada no nível da página inteira ou dentro de seções específicas.
+- É uma tag semântica, ajudando a melhorar a acessibilidade e a estrutura do documento.
+
+No seu código, você pode adicionar um `<footer>` ao final do `<body>` para incluir informações relevantes, como:
+
+```html
+<footer>
+    <p>&copy; 2025 Cristian Santos. Todos os direitos reservados.</p>
+</footer>
+```
+    <dl>
     <dt>HTML</dt>
     <dd>Uma linguagem de marcação usada para criar páginas da web.</dd>
     
@@ -30,6 +57,7 @@ A tag `<dd>` define a **descrição** ou o detalhamento do termo especificado em
 A tag `<strong>` é usada para destacar texto com **ênfase forte**. Por padrão, os navegadores exibem o texto em **negrito**.
 
 ### Exemplo de `<strong>`:
+    <p>Este é um texto <strong>importante</strong>.</p>
 ```html
 <p>Este é um texto <strong>importante</strong>.</p>
 ```
