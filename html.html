@@ -1,9 +1,95 @@
-A tag `<meta>` em HTML é usada para fornecer metadados sobre o documento. Esses metadados não são exibidos diretamente na página, mas são úteis para navegadores, mecanismos de busca e outros serviços. Aqui estão alguns usos comuns da tag `<meta>`:
+Aqui está a explicação das tags mencionadas:
 
+### Tag `<dl>` (Description List)
+A tag `<dl>` é usada para criar uma **lista de descrição**. É uma lista onde cada item tem um termo e sua descrição.
 
+### Tag `<dt>` (Description Term)
+A tag `<dt>` define o **termo** ou título de um item na lista de descrição.
 
+### Tag `<dd>` (Description Definition)
+A tag `<dd>` define a **descrição** ou o detalhamento do termo especificado em `<dt>`.
 
+### Exemplo de `<dl>`, `<dt>` e `<dd>`:
+```html
+<dl>
+    <dt>HTML</dt>
+    <dd>Uma linguagem de marcação usada para criar páginas da web.</dd>
+    
+    <dt>CSS</dt>
+    <dd>Uma linguagem de estilo usada para definir a aparência de páginas da web.</dd>
+</dl>
+```
 
+**Resultado:**  
+- **HTML**: Uma linguagem de marcação usada para criar páginas da web.  
+- **CSS**: Uma linguagem de estilo usada para definir a aparência de páginas da web.
+
+---
+
+### Tag `<strong>`
+A tag `<strong>` é usada para destacar texto com **ênfase forte**. Por padrão, os navegadores exibem o texto em **negrito**.
+
+### Exemplo de `<strong>`:
+```html
+<p>Este é um texto <strong>importante</strong>.</p>
+```
+
+**Resultado:**  
+Este é um texto **importante**.
+
+Essas tags são úteis para organizar e destacar informações em uma página HTML.
+
+As tags `<ol>` e `<li>` são usadas para criar **listas ordenadas** em HTML.
+
+### Tag `<ol>` (Ordered List)
+A tag `<ol>` cria uma lista **ordenada**, onde os itens são numerados automaticamente.
+
+### Tag `<li>` (List Item)
+A tag `<li>` é usada para definir cada item dentro de uma lista (ordenada ou não).
+
+### Exemplo de uso:
+```html
+<ol>
+    <li>Primeiro item</li>
+    <li>Segundo item</li>
+    <li>Terceiro item</li>
+</ol>
+```
+
+**Resultado:**  
+1. Primeiro item  
+2. Segundo item  
+3. Terceiro item  
+
+Se você quiser criar uma lista **não ordenada**, pode usar a tag `<ul>` no lugar de `<ol>`.
+
+### Tag `<br>`
+A tag `<br>` é usada para inserir uma **quebra de linha** no texto. Ela não cria um novo parágrafo, mas apenas move o conteúdo para a próxima linha. É uma tag **autocontida**, ou seja, não precisa de uma tag de fechamento.
+
+Exemplo:
+<p>Primeira linha<br>Segunda linha</p>
+```html
+<p>Primeira linha<br>Segunda linha</p>
+```
+Resultado:  
+Primeira linha  
+Segunda linha
+
+---
+
+### Tag `<abbr>`
+A tag `<abbr>` é usada para definir uma **abreviação** ou acrônimo, fornecendo uma explicação ou significado completo ao passar o mouse sobre o texto. Geralmente, é usada com o atributo `title` para especificar o significado.
+
+Exemplo:
+   <p>O <abbr title="HyperText Markup Language">HTML</abbr> é uma linguagem de marcação.</p>
+```html
+<p>O <abbr title="HyperText Markup Language">HTML</abbr> é uma linguagem de marcação.</p>
+```
+Ao passar o mouse sobre "HTML", será exibido "HyperText Markup Language".
+
+---
+
+**Nota:** No seu código, a tag `<abbr>` não está presente. Talvez você tenha digitado `<abbrt>` por engano, mas essa tag não existe no HTML.
 
 
 
@@ -23,6 +109,11 @@ No seu código, o trecho:
 ```
 
 Cria um parágrafo com o texto "this is my web page". Você pode estilizar os parágrafos usando CSS, como alterar a cor, o tamanho da fonte, o espaçamento, etc.
+
+
+A tag `<meta>` em HTML é usada para fornecer metadados sobre o documento. Esses metadados não são exibidos diretamente na página, mas são úteis para navegadores, mecanismos de busca e outros serviços. Aqui estão alguns usos comuns da tag `<meta>`:
+
+
 
 
 pra que serve o <meta>
