@@ -37,7 +37,7 @@ Este comando vai retornar os processos que os usuários rodaram no ambiente por 
 pode ser combinado com outros comandos como:
 LSOF | HEAD or TAIL vai trazer as 10 linhas do LSOF
 LSOF | grey "" voce pode pesquisar algo nas linhas do LSOF
-
+LSOF | wc -l return all the files you open in the system, but i don´t understend directly or not.
 
 
 
