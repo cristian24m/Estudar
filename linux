@@ -32,6 +32,11 @@ Para conseguir criar todo o caminho sem precisar criar uma
 pasta por vez, podemos utilizar o parâmetro -p do comando mkdir para indicar que
 desejamos criar toda a estrutura de pastas caso ela ainda não exista
 
+LSOF  
+Este comando vai retornar os processos que os usuários rodaram no ambiente por assim dizer;
+pode ser combinado com outros comandos como:
+LSOF | HEAD or TAIL vai trazer as 10 linhas do LSOF
+LSOF | grey "" voce pode pesquisar algo nas linhas do LSOF
 
 
 
