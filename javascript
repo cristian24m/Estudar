@@ -27,6 +27,11 @@ luigisDebt = luigisDebt - 35;
 console.log(luigisDebt);
 // 105
 
+Funções 
+console.log Esta não é uma variável simples, mas na verdade uma expressão que retorna o campo logdo valor contido na variável console.
+Por exemplo, temos a função Math.max, que pega dois números e retorna o maior entre eles:
+
+console.log(Math.max(2, 4));
 
 
 
