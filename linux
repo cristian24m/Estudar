@@ -39,6 +39,36 @@ LSOF | HEAD or TAIL vai trazer as 10 linhas do LSOF
 LSOF | grey "" voce pode pesquisar algo nas linhas do LSOF
 LSOF | wc -l return all the files you open in the system, but i don´t understend directly or not.
 
+Comando scp ele manda um arquivo para uma pasta
+scp nome_do_arquivo_de_origem nome_do_usuário@host_de_destino:pasta_de_destino
+Você pode usar o -vparâmetro " " para imprimir informações de depuração na tela. Ele pode ajudar a depurar problemas de conexão, autenticação e configuração.
+O comando a seguir copia um arquivo “ scp-cheatsheet.pdf ” de um sistema Linux local para um remoto no diretório /home/tecmint .
+$ scp -v scp-cheatsheet.pdf tecmint@192.168.0.183 :/home/tecmint/.
+ comando a seguir copia um arquivo “ ssh-cheatsheet.pdf ” de um host remoto para outro sistema host remoto no diretório /home/tecmint .
+$ scp -v tecmint@192.168.0.183 :/home/ravi/ssh-cheatsheet.pdf tecmint@192.168.0.102 :/home/anusha/.
+O parâmetro “ -p” preservará os tempos de modificação e acesso originais dos arquivos enquanto os copia, juntamente com o tempo estimado e a velocidade de conexão, aparecerão na tela.
+
+Copiar arquivos sem o -Cparâmetro " " resultará em 1661,3 segundos. Você pode comparar o resultado com o comando abaixo usando o -C"parâmetro " .
+ 10 vezes mais rápido do que não usar o -Cparâmetro " ". Se você estiver copiando muitos arquivos pela rede, o -Cparâmetro " " ajudará a reduzir o tempo total necessário.
+
+Outro parâmetro que pode ser útil é o -lparâmetro " -l ". O parâmetro " -l " limitará a largura de banda a ser usada . 
+Ele será útil se você criar um script de automação para copiar muitos arquivos, mas não quiser que a largura de banda seja drenada pelo processo SCP .
+O  valor 400-l atrás do parâmetro “ ” significa que limitamos a largura de banda do processo SCP a apenas 50 KB/seg .
+Um ponto a lembrar é que a largura de banda é especificada em quilobits / seg ( kbps ). Isso significa que 8 bits equivalem a 1 byte .
+Certifique-se de que ele usa “ ” maiúsculo Pe não “ p” já que “ p” já é usado para tempos e modos preservados.
+
+Às vezes, precisamos copiar o diretório e todos os arquivos/diretórios  dentro dele. Seria melhor se pudéssemos fazer isso em um único comando usando o -rparâmetro " ", que copia todo o diretório recursivamente.
+
+O servidor proxy geralmente é usado em ambientes de escritório. Nativamente, o SCP não é configurado como um proxy. Quando seu ambiente usa um proxy, você precisa " informar " ao SCP para se comunicar com o proxy.
+
+Aqui está o cenário. O endereço do proxy é 10.0.96.6 e a porta do proxy é 8080. O proxy também implementou a autenticação do usuário. Primeiro, você precisa criar o arquivo " ~/.ssh/config" . Depois, insira este comando dentro dele.
+
+ProxyCommand /usr/bin/corkscrew 10.0.96.6 8080 %h %p ~/.ssh/proxyauth
+Então você precisa criar o arquivo “ ~/.ssh/proxyauth ” que contém.
+
+meunomedeusuário:minhasenha
+Depois disso, você pode executar o SCP de forma transparente, como de costume.
+
 
 
 
