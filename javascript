@@ -1,5 +1,8 @@
 em javascript temos como voce vai escrever o codigo precisamos de lógica e algo que e só tem na linguagem,
 
+console. 
+https://developer.mozilla.org/pt-BR/docs/Web/API/console
+
 primeiro os operadores
 
 operador || indica o valor lógico or ou, em português, ou. Ele produz um valor verdadeiro se qualquer um dos valores dados à ele for verdadeiro.
