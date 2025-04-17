@@ -39,7 +39,7 @@ LSOF | HEAD or TAIL vai trazer as 10 linhas do LSOF
 LSOF | grey "" voce pode pesquisar algo nas linhas do LSOF
 LSOF | wc -l return all the files you open in the system, but i don´t understend directly or not.
 
-Comando scp ele manda um arquivo para uma pasta
+Comando scp https://www.tecmint.com/scp-commands-examples/
 scp nome_do_arquivo_de_origem nome_do_usuário@host_de_destino:pasta_de_destino
 Você pode usar o -vparâmetro " " para imprimir informações de depuração na tela. Ele pode ajudar a depurar problemas de conexão, autenticação e configuração.
 O comando a seguir copia um arquivo “ scp-cheatsheet.pdf ” de um sistema Linux local para um remoto no diretório /home/tecmint .
