@@ -49,4 +49,7 @@ console.log(Math.max(2, 4));
 
 onsole também e tudo que vai para o console, caso voce tenha uma variavel como let x; ela será undefned mas se voce colocar console.log(typeoff x) vai retornar o tipo de variavel que e o x
 
- 
+s. 
+s.lenth lembra quantas letras tem 
+s.sbstring(0, 5) somente ira aparecer as primeiras 5 letras
+s.toUpperCase deixa maiusculo
