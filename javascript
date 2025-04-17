@@ -30,12 +30,23 @@ luigisDebt = luigisDebt - 35;
 console.log(luigisDebt);
 // 105
 
+let voce pode declarar uma variavel mutavel onde voce podera mudar ela depois
+let age = 10 
+age =15
+
+const voce declara algo imutavel
+const tempo = 16
+tempo = 12 = error
+
+
+
+
 Funções 
 console.log Esta não é uma variável simples, mas na verdade uma expressão que retorna o campo logdo valor contido na variável console.
 Por exemplo, temos a função Math.max, que pega dois números e retorna o maior entre eles:
 
 console.log(Math.max(2, 4));
 
-
+onsole também e tudo que vai para o console, caso voce tenha uma variavel como let x; ela será undefned mas se voce colocar console.log(typeoff x) vai retornar o tipo de variavel que e o x
 
  
