@@ -1,7 +1,5 @@
 em javascript temos como voce vai escrever o codigo precisamos de lógica e algo que e só tem na linguagem,
 
-console. 
-https://developer.mozilla.org/pt-BR/docs/Web/API/console
 
 primeiro os operadores
 
@@ -42,6 +40,9 @@ tempo = 12 = error
 
 
 Funções 
+
+console. 
+https://developer.mozilla.org/pt-BR/docs/Web/API/console
 console.log Esta não é uma variável simples, mas na verdade uma expressão que retorna o campo logdo valor contido na variável console.
 Por exemplo, temos a função Math.max, que pega dois números e retorna o maior entre eles:
 
