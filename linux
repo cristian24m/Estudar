@@ -69,7 +69,8 @@ Então você precisa criar o arquivo “ ~/.ssh/proxyauth ” que contém.
 meunomedeusuário:minhasenha
 Depois disso, você pode executar o SCP de forma transparente, como de costume.
 
-
+find -name "" 
+mostra onde estão os arquivos com este nome.
 
 
 
