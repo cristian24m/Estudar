@@ -55,3 +55,14 @@ onsole também e tudo que vai para o console, caso voce tenha uma variavel como 
 .sbstring(0, 5) somente ira aparecer as primeiras 5 letras
 .toUpperCase deixa maiusculo
 .split ('') ele vai deixar tudo entre"" 
+
+
+bloco 
+normalmente uma estrutura nomeada e que seus dados ficam dentro de uma chave
+cristian{
+age:17;
+name:'cristian';
+hobiees[jogar,comer]
+}
+cristian.email = 'cristian@teste'; //assim eu adiciono algo a um bloco
+
