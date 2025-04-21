@@ -178,3 +178,135 @@ Aqui, tanto `case 'saturday'` quanto `case 'sunday'` executam o mesmo bloco de c
 Código semelhante encontrado com 1 tipo de licença
 
 
+O trecho de código define uma função chamada `addNums` que realiza a soma de dois números e, em seguida, demonstra seu uso ao exibir o resultado no console.
+
+### Explicação detalhada:
+
+1. **Definição da função `addNums`:**
+   ```javascript
+   function addNums(num1, num2){
+       return num1 + num2;
+   }
+   ```
+   - A função `addNums` é declarada utilizando a palavra-chave `function`.
+   - Ela aceita dois parâmetros, `num1` e `num2`, que representam os números que serão somados.
+   - O corpo da função contém a instrução `return num1 + num2;`, que calcula a soma dos dois números e retorna o resultado para quem chamou a função.
+
+2. **Chamada da função e exibição do resultado:**
+   ```javascript
+   console.log(addNums(5, 10));
+   ```
+   - A função `addNums` é chamada com os argumentos `5` e `10`. Esses valores são atribuídos aos parâmetros `num1` e `num2`, respectivamente.
+   - A soma de `5` e `10` é calculada dentro da função, resultando em `15`.
+   - O valor retornado pela função (`15`) é passado como argumento para o método `console.log`, que exibe o resultado no console.
+
+### Resultado:
+Quando o código é executado, o console exibirá:
+```
+15
+```
+
+### Contexto e utilidade:
+- Este exemplo demonstra como criar e usar uma função simples para realizar operações matemáticas.
+- Funções como `addNums` são úteis para encapsular lógica reutilizável, permitindo que o mesmo código seja usado em diferentes partes de um programa sem repetição.
+- Embora este exemplo seja básico, ele pode ser expandido para incluir validações ou manipulações mais complexas, dependendo das necessidades do programa.
+
+
+Uma **class** (classe) em JavaScript é uma estrutura que permite criar objetos com propriedades e métodos. Ela é uma forma mais moderna e legível de definir **funções construtoras** e herança, introduzida no ES6 (ECMAScript 2015). Classes são usadas para organizar e reutilizar código, especialmente em projetos maiores.
+
+---
+
+### Estrutura básica de uma classe:
+
+```javascript
+class Person {
+    constructor(firstName, lastName) {
+        this.firstName = firstName; // Propriedade 'firstName'
+        this.lastName = lastName;   // Propriedade 'lastName'
+    }
+
+    // Método da classe
+    getFullName() {
+        return `${this.firstName} ${this.lastName}`;
+    }
+}
+
+// Criando uma instância da classe
+const person1 = new Person('Jon', 'Doe');
+console.log(person1.getFullName()); // Saída: "Jon Doe"
+```
+
+---
+
+### Explicação detalhada:
+
+1. **Definição da classe:**
+   ```javascript
+   class Person {
+       constructor(firstName, lastName) {
+           this.firstName = firstName;
+           this.lastName = lastName;
+       }
+   }
+   ```
+   - A palavra-chave `class` é usada para definir uma classe.
+   - O método especial `constructor` é chamado automaticamente quando uma nova instância da classe é criada. Ele é usado para inicializar as propriedades do objeto.
+
+2. **Propriedades:**
+   - As propriedades, como `firstName` e `lastName`, são definidas dentro do `constructor` e associadas ao objeto com `this`.
+
+3. **Métodos:**
+   ```javascript
+   getFullName() {
+       return `${this.firstName} ${this.lastName}`;
+   }
+   ```
+   - Métodos são funções definidas dentro da classe que podem ser chamadas em instâncias da classe.
+   - No exemplo, `getFullName` retorna o nome completo da pessoa.
+
+4. **Criando uma instância:**
+   ```javascript
+   const person1 = new Person('Jon', 'Doe');
+   ```
+   - A palavra-chave `new` é usada para criar uma nova instância da classe `Person`.
+   - Os argumentos `'Jon'` e `'Doe'` são passados para o `constructor` e inicializam as propriedades `firstName` e `lastName`.
+
+5. **Chamando métodos:**
+   ```javascript
+   console.log(person1.getFullName());
+   ```
+   - O método `getFullName` é chamado na instância `person1`, retornando o nome completo.
+
+---
+
+### Herança com classes:
+Classes também suportam herança, permitindo que uma classe herde propriedades e métodos de outra.
+
+```javascript
+class Employee extends Person {
+    constructor(firstName, lastName, jobTitle) {
+        super(firstName, lastName); // Chama o constructor da classe pai
+        this.jobTitle = jobTitle;  // Propriedade adicional
+    }
+
+    getJobDescription() {
+        return `${this.getFullName()} is a ${this.jobTitle}`;
+    }
+}
+
+const employee1 = new Employee('Jane', 'Smith', 'Developer');
+console.log(employee1.getJobDescription()); // Saída: "Jane Smith is a Developer"
+```
+
+- **`extends`**: Define que a classe `Employee` herda de `Person`.
+- **`super`**: Chama o `constructor` da classe pai (`Person`) para inicializar as propriedades herdadas.
+
+---
+
+### Vantagens de usar classes:
+1. **Organização:** Facilita a estruturação de código orientado a objetos.
+2. **Reutilização:** Permite criar objetos com a mesma estrutura e comportamento.
+3. **Herança:** Facilita a criação de hierarquias de classes.
+4. **Legibilidade:** A sintaxe é mais clara e intuitiva em comparação com funções construtoras.
+
+Se precisar de mais exemplos ou explicações, é só pedir!
