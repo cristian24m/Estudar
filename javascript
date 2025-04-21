@@ -66,3 +66,16 @@ hobiees[jogar,comer]
 }
 cristian.email = 'cristian@teste'; //assim eu adiciono algo a um bloco
 
+IF
+Else if 
+Else
+dentro de um if voce pode colocar outro if mas o melhor é usar &&
+
+quando voce vai declarar uma variavel voce pode usar outra de condição
+const x = 11;
+const color = x > 10 ? 'red' : 'blue'; 
+red true, blue false
+
+
+
+
