@@ -73,6 +73,7 @@ Depois disso, você pode executar o SCP de forma transparente, como de costume.
 find -name "" 
 mostra onde estão os arquivos com este nome.
 
+nano /*
 
 
 
@@ -81,7 +82,6 @@ mostra onde estão os arquivos com este nome.
 
 
 
-
-
+*\
 
 
