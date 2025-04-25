@@ -76,7 +76,7 @@ mostra onde estão os arquivos com este nome.
 nano /*
 voce pode editar um arquivo de texto 
 Salve e feche o editor (Ctrl+O, Enter, depois Ctrl+X no nano).
-
+source <arquivo> recarregar o arquivo depois do nano
 
 
 
