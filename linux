@@ -8,6 +8,7 @@ cd PASTA Navega até a pasta desejada
 mkdir - PASTA Cria uma nova pasta
 rm - ARQUIVO Exclui um arquivo
 rm –r - PASTA Exclui uma pasta
+rm -fr remove a pasta forçando 
 pwd - Apresenta o diretório atual
 cp ORIGEM DESTINO - Copia um arquivo da origem para o destino
 mv ORIGEM DESTINO - Move ou recorta um arquivo da origem para o destino
