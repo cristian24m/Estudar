@@ -3,7 +3,8 @@ Comando
 Comando ctrl + alt + t abre o terminal
 
 l lista as pastas
-ls Listagem de arquivos e pastas
+ls Listagem de arquivos e pastas 
+ls -l podemos verificar as permissões para cada  arquivo e pasta
 cd PASTA Navega até a pasta desejada
 mkdir - PASTA Cria uma nova pasta
 rm - ARQUIVO Exclui um arquivo
@@ -22,25 +23,22 @@ adduser NOMEUSUARIO - Cria um novo usuário
 Sudo - permissão de super user
 
 
--l do comando ls, podemos verificar as permissões para cada
-arquivo e pasta
-
 echo “Conteúdo do arquivo” >
-aulapratica.txt. Esse comando criará um novo arquivo chamado aulapratica.txt e dentro do
+<nome do arquivo>. Esse comando criará um novo arquivo chamado aulapratica.txt e dentro do
 arquivo estará o texto que digitamos entre as aspas.
 
 Para conseguir criar todo o caminho sem precisar criar uma
 pasta por vez, podemos utilizar o parâmetro -p do comando mkdir para indicar que
 desejamos criar toda a estrutura de pastas caso ela ainda não exista
 
-LSOF  https://neverendingsecurity.wordpress.com/2015/04/13/lsof-commands-cheatsheet/
+LSOF || https://neverendingsecurity.wordpress.com/2015/04/13/lsof-commands-cheatsheet/
 Este comando vai retornar os processos que os usuários rodaram no ambiente por assim dizer;
 pode ser combinado com outros comandos como:
 LSOF | HEAD or TAIL vai trazer as 10 linhas do LSOF
 LSOF | grey "" voce pode pesquisar algo nas linhas do LSOF
 LSOF | wc -l return all the files you open in the system, but i don´t understend directly or not.
 
-Comando scp https://www.tecmint.com/scp-commands-examples/ || https://phoenixnap.com/kb/linux-scp-command
+Comando scp /* || https://www.tecmint.com/scp-commands-examples/ || https://phoenixnap.com/kb/linux-scp-command
 scp nome_do_arquivo_de_origem nome_do_usuário@host_de_destino:pasta_de_destino
 Você pode usar o -vparâmetro " " para imprimir informações de depuração na tela. Ele pode ajudar a depurar problemas de conexão, autenticação e configuração.
 O comando a seguir copia um arquivo “ scp-cheatsheet.pdf ” de um sistema Linux local para um remoto no diretório /home/tecmint .
@@ -69,18 +67,18 @@ Então você precisa criar o arquivo “ ~/.ssh/proxyauth ” que contém.
 
 meunomedeusuário:minhasenha
 Depois disso, você pode executar o SCP de forma transparente, como de costume.
+*\
 
 find -name "" 
 mostra onde estão os arquivos com este nome.
 
-nano /*
-voce pode editar um arquivo de texto 
+nano - voce pode editar um arquivo de texto 
 Salve e feche o editor (Ctrl+O, Enter, depois Ctrl+X no nano).
 source <arquivo> recarregar o arquivo depois do nano
 
 
 
 
-*\
+
 
 
