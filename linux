@@ -1,5 +1,7 @@
 Comando
 
+artigo shell https://www.gnu.org/software/bash/manual/html_node/Bourne-Shell-Builtins.html#index-eval
+
 Comando ctrl + alt + t abre o terminal
 
 l lista as pastas
@@ -21,7 +23,7 @@ top - Lista os programas em execução e dados de uso de memória
 date - Exibe a data e hora
 adduser NOMEUSUARIO - Cria um novo usuário
 Sudo - permissão de super user
-
+<> -v - para retornar a versão de algo
 
 echo “Conteúdo do arquivo” >
 <nome do arquivo>. Esse comando criará um novo arquivo chamado aulapratica.txt e dentro do
@@ -72,11 +74,15 @@ Depois disso, você pode executar o SCP de forma transparente, como de costume.
 find -name "" 
 mostra onde estão os arquivos com este nome.
 
+which "" - Procura no(s) diretório(s) listado(s) na variável de ambiente PATH o executável cujo nome você fornece, e retorna o caminho completo para ele.
+
 nano - voce pode editar um arquivo de texto 
 Salve e feche o editor (Ctrl+O, Enter, depois Ctrl+X no nano).
 source <arquivo> recarregar o arquivo depois do nano
 
+eval  - O eval recebe uma string como argumento, interpreta o seu conteúdo como se fosse código de shell e o executa no contexto do shell atual.
 
+touch - Atualiza a data de “último acesso” e “última modificação” de um arquivo. Se o arquivo não existir, o touch o cria vazio.
 
 
 
