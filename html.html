@@ -30,29 +30,29 @@ quebra da configuração:
 width=device-width → Diz ao navegador para usar a largura da tela do dispositivo (celular, tablet, etc.), em vez de uma largura fixa.
 
 initial-scale=1.0 → Define o nível de zoom inicial da página como 100% (sem zoom).
-🧱 Tags Básicas do HTML
-📝 <p> – Parágrafo
+ Tags Básicas do HTML
+ <p> – Parágrafo
 Define um parágrafo de texto.
 
 
 <p>Este é um parágrafo.</p>
-🔠 <strong> – Destaque/Ênfase
+ <strong> – Destaque/Ênfase
 Deixa o texto em negrito e com significado semântico de importância.
 
 
 <p>Esse texto é <strong>importante</strong>.</p>
-🔤 <br> – Quebra de linha
+ <br> – Quebra de linha
 Usado para pular para a próxima linha sem iniciar um novo parágrafo.
 
     
 <p>Linha 1<br>Linha 2</p>
-🔍 <abbr> – Abreviação
+ <abbr> – Abreviação
 Exibe o significado da sigla ao passar o mouse.
 
 
 <p><abbr title="HyperText Markup Language">HTML</abbr> é incrível!</p>
-📋 Trabalhando com Listas
-🔢 <ol> e <li> – Lista Ordenada
+ Trabalhando com Listas
+ <ol> e <li> – Lista Ordenada
 Cria listas numeradas.
 
 
@@ -60,7 +60,7 @@ Cria listas numeradas.
   <li>Primeiro item</li>
   <li>Segundo item</li>
 </ol>
-🔘 <ul> e <li> – Lista Não Ordenada
+ <ul> e <li> – Lista Não Ordenada
 Cria listas com marcadores.
 
 
@@ -68,7 +68,7 @@ Cria listas com marcadores.
   <li>Item A</li>
   <li>Item B</li>
 </ul>
-🧾 Listas de Definição: <dl>, <dt>, <dd>
+ Listas de Definição: <dl>, <dt>, <dd>
 Usadas para mostrar termos e suas descrições.
 
 
@@ -85,7 +85,7 @@ Usadas para mostrar termos e suas descrições.
 
 <dd>: Descrição do termo.
 
-📌 Rodapé: <footer>
+ Rodapé: <footer>
 Usado para adicionar um rodapé na página ou em seções.
 
 
@@ -93,7 +93,7 @@ Usado para adicionar um rodapé na página ou em seções.
   <p>&copy; 2025 Cristian Santos. Todos os direitos reservados.</p>
   <p><a href="privacy.html">Política de Privacidade</a></p>
 </footer>
-ℹ️ Detalhes com <meta>
+ℹ Detalhes com <meta>
 A tag <meta> vai dentro do <head> e serve para fornecer metadados. Exemplos:
 
 
@@ -170,6 +170,54 @@ A tag <meta> vai dentro do <head> e serve para fornecer metadados. Exemplos:
 &lt;meta name="description" content="Descrição da página."&gt;
 &lt;meta name="author" content="Cristian Santos"&gt;
 </pre>
+Tags <td> e <th> dentro de uma <table>
+html
+Copiar
+Editar
+<table>
+    <td></td> <!-- Define uma célula comum da tabela -->
+    <th></th> <!-- Define uma célula de cabeçalho, exibida em negrito por padrão -->
+</table>
+Explicação:
+ <td> – Table Data
+A tag <td> é usada para criar células normais dentro de uma tabela. Ela representa os dados da tabela.
+
+Exemplo:
+
+<td>Conteúdo da célula</td>
+<th> – Table Header
+A tag <th> define uma célula de cabeçalho. Por padrão, o texto dentro de um <th> aparece:
+
+Em negrito.
+
+Centralizado.
+
+Não é necessário usar <strong>, porque o próprio <th> já aplica esse estilo de destaque.
+
+Exemplo:
+
+
+<th>Nome</th>
+ Exemplo completo de tabela:
+
+<table border="1">
+    <tr>
+        <th>Nome</th>
+        <th>Idade</th>
+    </tr>
+    <tr>
+        <td>Maria</td>
+        <td>30</td>
+    </tr>
+    <tr>
+        <td>João</td>
+        <td>25</td>
+    </tr>
+</table>
+Resultado:
+Nome	Idade
+Maria	30
+João	25
 
 </body>
 </html>
