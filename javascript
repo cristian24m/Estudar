@@ -309,4 +309,11 @@ console.log(employee1.getJobDescription()); // Saída: "Jane Smith is a Develope
 3. **Herança:** Facilita a criação de hierarquias de classes.
 4. **Legibilidade:** A sintaxe é mais clara e intuitiva em comparação com funções construtoras.
 
-Se precisar de mais exemplos ou explicações, é só pedir!
+
+[[Protótipo]]
+
+Quando lemos uma propriedade de object, e ela está ausente, o JavaScript a retira automaticamente do protótipo. Em programação, isso é chamado de "herança prototípica". E em breve estudaremos muitos exemplos dessa herança, bem como recursos mais interessantes da linguagem desenvolvidos com base nela.
+
+A propriedade [[Prototype]]é interna e oculta, mas há muitas maneiras de defini-la.
+
+Uma delas é usar o nome especial __proto__
