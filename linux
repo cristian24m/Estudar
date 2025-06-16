@@ -212,3 +212,94 @@ minha_funcao() {
 minha_funcao Maria
 $1 é o primeiro argumento passado para a função.
 
+Operações Básicas com Strings no Bash
+ String Length
+EN: Get the length (number of characters) in a string.
+PT: Obtém o comprimento (número de caracteres) de uma string.
+
+
+STRING="this is a string"
+echo ${#STRING}    # Output: 16
+ Character Index (posição de caractere)
+EN: Find the position of the first match of any character from SUBSTRING inside STRING.
+PT: Encontra a posição do primeiro caractere de SUBSTRING que aparece em STRING. Usa-se expr.
+
+
+STRING="this is a string"
+SUBSTRING="hat"
+expr index "$STRING" "$SUBSTRING"   # Output: 1 (posição do 't')
+ Substring Extraction (extração de parte da string)
+EN: Extract part of a string. Syntax: ${STRING:POS:LEN}
+PT: Extrai parte da string. Sintaxe: ${STRING:POS:LEN}
+
+POS é a posição inicial (começa do 0)
+
+LEN é a quantidade de caracteres a extrair
+
+
+STRING="this is a string"
+echo ${STRING:1:3}    # Output: "his" (começa do 1 e pega 3 letras)
+Se LEN for omitido, extrai até o final:
+
+
+echo ${STRING:1}      # Output: "his is a string"
+echo ${STRING:12}     # Output: "ring"
+Practical Example: Extracting a Field from a Record
+PT: Exemplo prático: extraindo o primeiro nome de um registro de dados
+
+
+DATARECORD="last=Clifford,first=Johnny Boy,state=CA"
+COMMA1=`expr index "$DATARECORD" ','`      # Posição do 1º ','
+CHOP1FIELD=${DATARECORD:$COMMA1}           # Remove até a vírgula
+COMMA2=`expr index "$CHOP1FIELD" ','`      # Próxima vírgula
+LENGTH=`expr $COMMA2 - 6 - 1`               # Cálculo do tamanho do nome
+FIRSTNAME=${CHOP1FIELD:6:$LENGTH}          # Pega o nome
+echo $FIRSTNAME                            # Output: Johnny Boy
+ Substring Replacement (substituição de parte da string)
+🔸 Replace first occurrence
+EN: Substitui a primeira ocorrência de um texto.
+PT: Substitui apenas a primeira vez que a substring aparece.
+
+
+STRING="to be or not to be"
+echo ${STRING[@]/be/eat}      # Output: to eat or not to be
+🔸 Replace all occurrences
+EN: Substitui todas as ocorrências.
+PT: Substitui todas as vezes que a substring aparece.
+
+
+echo ${STRING[@]//be/eat}     # Output: to eat or not to eat
+🔸 Delete substring (remover)
+EN: Remove todas as ocorrências da substring.
+PT: Remove o trecho da string (sem substituir por nada).
+
+
+echo ${STRING[@]// not/}      # Output: to be or to be
+🔸 Replace if at the beginning
+EN: Substitui a substring se estiver no começo da string.
+PT: Substitui somente se for o começo da string.
+
+
+echo ${STRING[@]/#to be/eat now}  # Output: eat now or not to be
+🔸 Replace if at the end
+EN: Substitui a substring se estiver no final da string.
+PT: Substitui somente se estiver no fim da string.
+
+echo ${STRING[@]/%be/eat}    # Output: to be or not to eat
+🔸 Replace with command output
+EN: Substitui por algo gerado por um comando (como date).
+PT: Substitui por algo retornado de um comando (ex: data atual).
+
+
+echo ${STRING[@]/%be/be on $(date +%Y-%m-%d)}
+# Output: to be or not to be on 2025-06-16
+Conclusão
+Operação	Bash	Resultado
+Tamanho da string	${#VAR}	Número de caracteres
+Posição de caractere	expr index "$A" "$B"	Posição do caractere
+Extrair substring	${VAR:pos:tamanho}	Parte da string
+Substituir primeira	${VAR/subst/novo}	Só a 1ª ocorrência
+Substituir todas	${VAR//subst/novo}	Todas as ocorrências
+Substituir no início	${VAR/#subst/novo}	Se for no começo
+Substituir no final	${VAR/%subst/novo}	Se for no final
+Comando como substituição	$(comando) dentro da string	Executa e insere resultado
