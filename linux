@@ -88,3 +88,127 @@ touch - Atualiza a data de “último acesso” e “última modificação” de
 
 
 
+
+
+
+
+
+
+
+
+
+\\\\\\\\\\\\\\-------------------------------BASH-------------------------------/////////////
+1. O que é Bash?
+Bash é um interpretador de comandos usado em sistemas Linux/Unix. Ele permite automatizar tarefas e executar comandos por meio de scripts (.sh).
+
+✍ 2. Criando um script Bash
+Um script Bash é um arquivo de texto que começa com a linha:
+
+b
+#!/bin/bash
+Exemplo simples:
+
+
+#!/bin/bash
+echo "Olá, mundo!"
+Execute com:
+
+
+bash nome_do_arquivo.sh
+ 3. Variáveis
+Criando variáveis:
+
+nome=Maria       # sem espaços ao redor do =
+idade=25
+greeting='Olá mundo!'
+Usando variáveis:
+
+echo $nome
+Use $ para acessar o valor de uma variável.
+
+4. Escapando caracteres especiais
+O símbolo $ é especial (indica variável).
+
+Para imprimir um $ literal, use \ para escapar:
+
+
+echo "Preço: \$5"
+Saída:
+
+Preço: $5
+ 5. Substituição de comandos
+Você pode usar o resultado de um comando como valor de uma variável:
+
+Sintaxe:
+
+VAR=$(comando)
+# ou
+VAR=`comando`
+Exemplo:
+
+hoje=$(date +%Y-%m-%d)
+echo "Data de hoje: $hoje"
+6. Quebrando linha no terminal (sem executar)
+Para quebrar linha enquanto digita no terminal:
+Use barra invertida no fim da linha:
+
+
+echo "Isto é uma linha \
+que continua na próxima linha"
+Ou pressione Ctrl + V, depois Enter, para inserir uma quebra literal.
+
+ 7. Argumentos passados para o script
+Quando você executa um script passando valores:
+
+bash script.sh valor1 valor2 valor3
+Esses valores são chamados argumentos.
+
+Dentro do script:
+Variável	Significado
+$0	Nome do script
+$1	Primeiro argumento
+$2	Segundo argumento
+$#	Quantidade de argumentos
+$@	Todos os argumentos
+
+Exemplo:
+
+#!/bin/bash
+echo "Script: $0"
+echo "Primeiro argumento: $1"
+echo "Argumentos recebidos: $#"
+echo "Todos os argumentos: $@"
+Executando com:
+
+
+bash script.sh maçã banana uva
+Saída:
+
+
+Script: script.sh
+Primeiro argumento: maçã
+Argumentos recebidos: 3
+Todos os argumentos: maçã banana uva
+ 8. Arrays em Bash
+Criando um array:
+frutas=(maçã banana "Fruit Basket" laranja)
+Use aspas para manter valores com espaço como uma única entrada.
+
+Acessando elementos:
+
+echo ${frutas[0]}   # maçã
+echo ${frutas[2]}   # Fruit Basket
+Atribuindo novo valor:
+
+
+frutas[4]=melancia
+ 9. Funções em Bash
+Você pode definir e usar funções dentro do seu script:
+
+
+minha_funcao() {
+  echo "Olá $1"
+}
+minha_funcao Maria
+$1 é o primeiro argumento passado para a função.
+
