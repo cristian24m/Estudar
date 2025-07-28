@@ -176,3 +176,8 @@ js
 Dicas
 Use sempre a conversão explícita quando quiser garantir o tipo do valor.
 Prefira o uso de === (estritamente igual) para evitar surpresas com conversão implícita durante comparações.
+
+SLICE - é função que voce coloca depois do array, array.slice que cria uma nova lista onde voce pode colocar em uma nova variável, e os parametros são comeco e fim slice(0, 19) e o 19 nã
+entre na nova lista.
+
+
