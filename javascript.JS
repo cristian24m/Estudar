@@ -180,4 +180,10 @@ Prefira o uso de === (estritamente igual) para evitar surpresas com conversão i
 SLICE - é função que voce coloca depois do array, array.slice que cria uma nova lista onde voce pode colocar em uma nova variável, e os parametros são comeco e fim slice(0, 19) e o 19 nã
 entre na nova lista, mas não é obrigatório ter final, se eu quero do 5 ate o fim só colocar (5).
 
-SPLICE - poder deletar uma série de itens a partir do primeiro parametro  então slice(4, 9) vou apagra nove itens a partir do item 4.
+SPLICE - poder deletar uma série de itens a partir do primeiro parametro  então slice(4, 9) vou apagra nove itens a partir do item 4, e voce pode colocar um terceiro paranetro para ser incluido 
+no mesmo local, (1, 2, 5)
+
+concat - a funcão .concat junta arrays em um novo array como para voce fazer o que quiser
+const arrayNovo = aArray1.concat(aArray2, Array3).
+a nova ordem do array sera de acordo com a ordem dos arrays que voce colocar nesse caso seria primeiro os itens do array 1 depois 2 e apos 3.
+
