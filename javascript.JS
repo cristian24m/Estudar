@@ -253,3 +253,9 @@ Evite var.
 Use template strings:
 
 `Olá, ${nome}!`
+
+for each
+
+split
+
+replace
