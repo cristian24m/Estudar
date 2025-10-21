@@ -259,3 +259,25 @@ for each
 split
 
 replace
+
+O ChatGPT disse:
+
+📝 Nullish Coalescing Assignment (??=)
+Atribui um valor somente se a variável for null ou undefined.
+
+Sintaxe:
+
+x ??= y; // equivale a if (x === null || x === undefined) x = y;
+
+
+Características:
+
+Não altera valores “falsy” como 0, "" ou false.
+
+Útil para definir valores padrão sem sobrescrever dados válidos.
+
+Exemplo:
+
+let valor = null;
+valor ??= 10;
+console.log(valor); // 10
