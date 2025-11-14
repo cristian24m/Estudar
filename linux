@@ -303,3 +303,10 @@ Substituir todas	${VAR//subst/novo}	Todas as ocorrências
 Substituir no início	${VAR/#subst/novo}	Se for no começo
 Substituir no final	${VAR/%subst/novo}	Se for no final
 Comando como substituição	$(comando) dentro da string	Executa e insere resultado
+
+Comando Zip, depois voce tem que falar o nome do arquivo e quem voce quer colocar dentro dele 
+zip -r funciona de verdad
+depois para desfazer usar o comando unzip
+comando less voce consegue ver o que tem dentro do arquivo 
+
+tar -czf e o que eu quero compactar
