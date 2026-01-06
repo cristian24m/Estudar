@@ -1,3 +1,7 @@
+se for usar o import ou export, usar o comando no terminal npm init -y e dentro do packet jason criar um "type": "module"
+
+
+
 Operadores
 Lógicos
 
